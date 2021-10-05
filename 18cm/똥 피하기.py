@@ -14,7 +14,7 @@ pygame.display.set_caption("똥 피하기")
 
 # FPS
 clock = pygame.time.Clock()
-##########################################################
+#######################################################
 
 # 1. 사용자 게임 초기화 (배경 화면, 게임 이미지, 좌표, 속도, 폰트)
 background = pygame.image.load("C:\\Users\\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Python workspace\\Pygame_basic\\Background.png")
