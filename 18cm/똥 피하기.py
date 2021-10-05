@@ -39,7 +39,7 @@ enemy_y_pos = 0
 to_x = 0
 to_y = 0
 
-# 캐릭터 속도
+# 캐릭터 속도로로로로로롱 
 character_speed = 0.6
 
 enemy_speed = 0.5
