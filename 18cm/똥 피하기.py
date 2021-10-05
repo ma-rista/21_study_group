@@ -14,12 +14,12 @@ pygame.display.set_caption("똥 피하기")
 
 # FPS
 clock = pygame.time.Clock()
-#######################################################
+##########################################################
 
 # 1. 사용자 게임 초기화 (배경 화면, 게임 이미지, 좌표, 속도, 폰트)
-background = pygame.image.load("C:\\Users\\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Python workspace\\Pygame_basic\\Background.png")
+background = pygame.image.load("C:\\Users\\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Pygame_basic\\Pygame_basic\\background.png")
 
-character = pygame.image.load("C:\\Users\\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Python workspace\\Pygame_basic\\character.png")
+character = pygame.image.load("C:\\Users\\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Pygame_basic\\Pygame_basic\\character.png")
 character_size = character.get_rect().size
 character_width = character_size[0]
 character_height = character_size[1]
@@ -27,7 +27,7 @@ character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height
 
 
-enemy = pygame.image.load("C:\\Users\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Python workspace\\Pygame_basic\\enemy.png")
+enemy = pygame.image.load("C:\\Users\gksdn\\OneDrive - Wonkwang University\\바탕 화면\\Pygame_basic\\Pygame_basic\\enemy.png")
 enemy_size = enemy.get_rect().size
 enemy_width = enemy_size[0]
 enemy_height = enemy_size[0]
@@ -39,7 +39,7 @@ enemy_y_pos = 0
 to_x = 0
 to_y = 0
 
-# 캐릭터 속도로로로로로롱 
+# 캐릭터 속도
 character_speed = 0.6
 
 enemy_speed = 0.5
@@ -105,6 +105,5 @@ while running:
 
     pygame.display.update() # 게임화면 다시 그리기*
 
-pygame.time.delay(2000) # 2초 뒤 종료
 
 pygame.quit()
