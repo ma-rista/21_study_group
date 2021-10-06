@@ -30,9 +30,11 @@
 
 | 1일차 Github 연결 | 10 / 5 |
 | 2일차 ENIAC P DailySwift 스토리 보드 구현  | 10 / 6 |
-| 1장. web 이란? (예시)| Devinan | 4 / 10 |
-| 1장. web 이란? (예시)| Devinan | 4 / 10 |
-
+| 3일차. web 이란? (예시)| Devinan | 10 /  |
+| 4일차. web 이란? (예시)| Devinan | 10 /  |
+| 5일차. web 이란? (예시)| Devinan | 10 /  |
+| 6일차. web 이란? (예시)| Devinan | 10 /  |
+| 7일차. web 이란? (예시)| Devinan | 10 /  |
 ## Ardunio 세부 일정
 | 강의              | 발표자 | 날짜 |
 | -----------------| ------- | --- |
