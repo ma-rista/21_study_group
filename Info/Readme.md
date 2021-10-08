@@ -4,9 +4,9 @@
 # 목차
 - [목차]
  - [RoadMap](#RoadMap)
-   - [ios developer](ios-developer)  
-   - [python developer](python-developer)
-   - [front, back-end developer](front,-banck-end-developer)
+   - [Ios Developer](ios-developer)  
+   - [Python Developer](python-developer)
+   - [Front, Backend Developer](front,-banckend-developer)
 
 
  ## RoadMap
