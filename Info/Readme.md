@@ -4,9 +4,9 @@
 # 목차
 - [목차]
  - [RoadMap](#RoadMap)
-   -[ios developer](ios-developer)
-   -[python developer](python-developer)
-   -[front, back-end developer](front,-banck-end-developer)
+  - [ios developer](ios-developer)  
+  - [python developer](python-developer)
+  - [front, back-end developer](front,-banck-end-developer)
 
 
  ## RoadMap
@@ -17,4 +17,5 @@
 ----------------------------------------------------------
  ### Python Developer
 ![Ios 로드맵1](./RoadMap/ios/intro_roadmap_v1.0.png)
-* Front, Back-end Developer
+--------------------------------------------------------
+ ### Front, Back-end Developer
