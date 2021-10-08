@@ -16,7 +16,7 @@
 ![Ios 로드맵3](./RoadMap/ios/Swift_programming_roadmap_v0.9.png)
 ----------------------------------------------------------
  ### Python Developer
-![Python 로드맵](./RoadMap/python/python.pdf)
+![Python 로드맵](./RoadMap/python/python.jpg)
 --------------------------------------------------------
  ### Front, Backend Developer
  ![Frontend 로드맵](./RoadMap/front,back-end/frontend.png)
