@@ -25,3 +25,5 @@ rank1 = soup.find("li", attrs={"class":"rank01"})
 # rank2 = rank3.previous_sibling.previous_sibling
 # print(rank2.a.get_text())
 print(rank1.parent)
+
+ㅁㄴㅇㄹ
