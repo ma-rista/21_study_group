@@ -6,7 +6,7 @@
  - [RoadMap](#RoadMap)
    - [ Ios Developer ](#ios-developer)  
    - [ Python Developer ](#python-developer)
-   - [ Front, Backend Developer ](#front--banckend-developer)
+   - [ Front, Backend Developer ](#front-backend-developer)
 
 
  ## RoadMap
