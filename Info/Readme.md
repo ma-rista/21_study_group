@@ -14,10 +14,10 @@
 ![Ios 로드맵1](./RoadMap/ios/intro_roadmap_v1.0.png)
 ![Ios 로드맵2](./RoadMap/ios/iOS_roadmap_v1.0.png)
 ![Ios 로드맵3](./RoadMap/ios/Swift_programming_roadmap_v0.9.png)
-----------------------------------------------------------
+----------------------------------------------------------<br><br>
  ### Python Developer
 ![Python 로드맵](./RoadMap/python/python.jpg)
---------------------------------------------------------
+--------------------------------------------------------<br><br>
  ### Front, Backend Developer
  ![Frontend 로드맵](./RoadMap/front,back-end/frontend.png)
  ![Backend 로드맵](./RoadMap/front,back-end/backend.png)
