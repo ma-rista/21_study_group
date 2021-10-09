@@ -26,4 +26,3 @@ rank1 = soup.find("li", attrs={"class":"rank01"})
 # print(rank2.a.get_text())
 print(rank1.parent)
 
-ㅁㄴㅇㄹ
