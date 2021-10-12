@@ -35,6 +35,7 @@ enemy_x_pos = random.randint(0,screen_width - enemy_width)
 enemy_y_pos = 0
 
 
+
 # 이동할 좌표
 to_x = 0
 to_y = 0
