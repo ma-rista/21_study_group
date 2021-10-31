@@ -34,6 +34,13 @@ enemy_height = enemy_size[0]
 enemy_x_pos = random.randint(0,screen_width - enemy_width)
 enemy_y_pos = 0
 
+enemy2 = pygame.image.load("//Users//Han-woojin//Documents//GitHub//21_study_group//18cm//enemy.png")
+enemy2_size = enemy.get_rect().size
+enemy2_width = enemy_size[0]
+enemy2_height = enemy_size[0]
+enemy2_x_pos = random.randint(0,screen_width - enemy_width)
+enemy2_y_pos = 0
+
 
 
 # 이동할 좌표
@@ -75,6 +82,8 @@ while running:
     
     enemy_y_pos += to_y * dt
 
+    enemy2_y_pos += to_y * dt
+
     # 가로 경계 처리
     if character_x_pos < 0:
         character_x_pos = 0
@@ -84,6 +93,10 @@ while running:
     if enemy_y_pos > screen_height - enemy_height:
         enemy_y_pos = 0
         enemy_x_pos = random.randint(1, screen_width)
+
+    if enemy2_y_pos > screen_height - enemy_height:
+        enemy2_y_pos = 0
+        enemy2_x_pos = random.randint(1, screen_width)
     
     # 4. 충돌 처리
     character_rect = character.get_rect()
@@ -94,7 +107,15 @@ while running:
     enemy_rect.left = enemy_x_pos
     enemy_rect.top = enemy_y_pos
 
+    enemy2_rect = enemy2.get_rect()
+    enemy2_rect.left = enemy2_x_pos
+    enemy2_rect.top = enemy2_y_pos
+
     if character_rect.colliderect(enemy_rect):
+        print("게임 오버")
+         running = False
+        aa
+    if character_rect.colliderect(enemy2_rect):
         print("게임 오버")
         running = False
 
@@ -105,7 +126,8 @@ while running:
 
     screen.blit(enemy, (enemy_x_pos, enemy_y_pos))
 
-    pygame.display.update() # 게임화면 다시 그리기*
+    screen.blit(enemy2, (enemy2_x_pos, enemy2_y_pos))
 
+    pygame.display.update() # 게임화면 다시 그리기*
 
 pygame.quit()
