@@ -17,9 +17,9 @@ clock = pygame.time.Clock()
 ##########################################################
 
 # 1. 사용자 게임 초기화 (배경 화면, 게임 이미지, 좌표, 속도, 폰트)
-background = pygame.image.load("//Users//Han-woojin//Documents//GitHub//21_study_group//18cm//background.png")
+background = pygame.image.load("/Users/02.011x/Documents/GitHub/21_study_group/18cm/Background.png")
 
-character = pygame.image.load("//Users//Han-woojin//Documents//GitHub//21_study_group//18cm//character.png")
+character = pygame.image.load("/Users/02.011x/Documents/GitHub/21_study_group/18cm/character.png")
 character_size = character.get_rect().size
 character_width = character_size[0]
 character_height = character_size[1]
@@ -27,14 +27,14 @@ character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height
 
 
-enemy = pygame.image.load("//Users//Han-woojin//Documents//GitHub//21_study_group//18cm//enemy.png")
+enemy = pygame.image.load("/Users/02.011x/Documents/GitHub/21_study_group/18cm/enemy.png")
 enemy_size = enemy.get_rect().size
 enemy_width = enemy_size[0]
 enemy_height = enemy_size[0]
 enemy_x_pos = random.randint(0,screen_width - enemy_width)
 enemy_y_pos = 0
 
-enemy2 = pygame.image.load("//Users//Han-woojin//Documents//GitHub//21_study_group//18cm//enemy.png")
+enemy2 = pygame.image.load("/Users/02.011x/Documents/GitHub/21_study_group/18cm/enemy.png")
 enemy2_size = enemy.get_rect().size
 enemy2_width = enemy_size[0]
 enemy2_height = enemy_size[0]
@@ -113,8 +113,8 @@ while running:
 
     if character_rect.colliderect(enemy_rect):
         print("게임 오버")
-         running = False
-        aa
+        running = False
+        
     if character_rect.colliderect(enemy2_rect):
         print("게임 오버")
         running = False
