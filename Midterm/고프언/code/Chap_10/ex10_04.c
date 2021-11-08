@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main(void)
 {
 	int point[] = { 23, 35, 2, 9, 75, 96, 82, 16, 48, 85, 33, 67, 95, 37 };

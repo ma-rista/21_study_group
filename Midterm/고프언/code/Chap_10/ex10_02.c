@@ -11,7 +11,7 @@ int main(void)
 	for (cnt = 0; cnt < DT; cnt++) // 3개 과목 점수 반복 입력
 	{
 		printf("과목%d 점수 : ___ \b\b\b", cnt + 1);
-		scanf_s("%d", &score[cnt]);
+		scanf("%d", &score[cnt]);
 	}
 
 	for (cnt = 0; cnt < DT; cnt++) // 3개 과목 총점 산출
