@@ -5,6 +5,11 @@
 //  Created by 정익상 on 2021/11/24.
 //
 
+/* struct 구조체이름 {
+     자료형 멤버이름;
+}; */
+
+
 #define _CRT_SECURE_NO_WARNINGS    // strcpy 보안 경고로 인한 컴파일 에러 방지
 #include <stdio.h>
 #include <string.h>    // strcpy 함수가 선언된 헤더 파일
