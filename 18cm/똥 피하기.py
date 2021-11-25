@@ -113,8 +113,8 @@ while running:
 
     if character_rect.colliderect(enemy_rect):
         print("게임 오버")
-         running = False
-        aa
+        running = False
+        
     if character_rect.colliderect(enemy2_rect):
         print("게임 오버")
         running = False
