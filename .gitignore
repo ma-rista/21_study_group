@@ -1,4 +1,4 @@
 ##폴더무시
 .DS_Store
 .ini
-.DS_Store
+*.dYSM
