@@ -15,33 +15,33 @@ RED = (250, 50, 50)
 
 FPS = 60
 
-class Fighter(pygame.sprite.Sprite):  # 캐릭터 클래스 생성
-    def __ini__(self):                # 캐릭터 모양 및 위치
+class Fighter(pygame.sprite.Sprite):
+    def __ini__(self):
         super(Fighter,self).__init__()
         self.image = pygame.image.load('/Users/Han-woojin/Documents/GitHub/21_study_group/Iksang/Python/python Aca/python Aca/PyShooting/fighter.png')
-        self.rect = self.image.get.rect()
+        self.rect =self.image.get.rect()
         self.rect.x = int(WINDOW_WIDTH / 2)
         self.rect.y = WINDOW_HEIGHT - self.rect.height
         self.dx = 0
         self.dy = 0
     
-        def update(self):             # 캐릭터 
-            self.rect.x += self.dx
-            self.rect.y += self.dy
+    def update(self):
+        self.rect.x += self.dx
+        self.rect.y += self.dy
 
-            if self.rect.x < 0 or self.rect.x + self.rect.width > WINDOW_WIDTH:
-                self.rect.x -= self.dx
-            
-            if self.rect.y < 0 or self.rect.y + self.rect.height > WINDOW_HEIGHT:
-                self.rect.y -= self.dy
-        
-        def draw(self, screen):    # 화면에 캐릭터 표시
-            screen.blit(self.image, self.rect)
+        if self.rect.x < 0 or self.rect.x + self.rect.width > WINDOW_WIDTH:
+            self.rect.x -= self.dx
 
-        def collide(self, sprites):
-            for sprite in sprites:
-                if pygame.sprite.collide_rect(self, sprite):
-                    return sprite
+        if self.rect.y < 0 or self.rect.y + self.rect.height > WINDOW_HEIGHT:
+            self.rect.y -= self.dy
+    
+    def draw(self, screen):
+        screen.blit(self.image, self.rect)
+
+    def collide(self, sprites):
+        for sprite in sprites:
+            if pygame.sprite.collide_rect(self, sprite):
+                return sprite
 
 
 class Missile(pygame.sprite.Sprite):
@@ -84,7 +84,7 @@ class Rock(pygame.sprite.Sprite):
 
     def out_of_screen(self):
         if self.rect.y > WINDOW_HEIGHT:
-            return True 
+            return True
 
 
 def draw_text(text, font, surface, x,y,main_color):
@@ -179,7 +179,7 @@ def game_loop():
         missile.update()
         missile.draw(screen)
         fighter.update()
-        fighter.draw(screen) # 'Fighter' object has no attribute 'draw'
+        fighter.draw(screen)
         pygame.display.flip()
 
         if fighter.collide(rocks) or count_missed >= 3: 
@@ -203,7 +203,9 @@ def game_menu():
     font_70 = pygame.font.Font('/Users/Han-woojin/Documents/GitHub/21_study_group/Iksang/Python/python Aca/python Aca/PyShooting/NanumGothic.ttf', 70)
     font_40 = pygame.font.Font('/Users/Han-woojin/Documents/GitHub/21_study_group/Iksang/Python/python Aca/python Aca/PyShooting/NanumGothic.ttf', 40)
 
-    draw_text('나 너무 지루해.', font_40, screen, draw_x, draw_y + 200, WHITE)
+    draw_text('슈팅게임!', font_70, screen, draw_x, draw_y, YELLOW)
+    draw_text('엔터 키를 누르면', font_40, screen, draw_x, draw_y + 200, WHITE)
+    draw_text('슈팅게임!', font_70, screen, draw_x, draw_y + 250, WHITE)
 
     pygame.display.update()
 
@@ -225,7 +227,7 @@ def main():
 
     action = 'game_menu'
     while action != 'quit':
-        if action == 'game`_menu':
+        if action == 'game_menu':
             action = game_menu()
         elif action == 'play':
             action = game_loop()
