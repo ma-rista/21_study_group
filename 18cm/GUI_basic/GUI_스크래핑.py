@@ -25,10 +25,10 @@ lab1 = Label(root)
 # 프리셋 저장
     
 def save():
-    import Preset_save as preset
-    from Preset_save import txt1 
-    UT = ent1.get()
-    txt1.insert(END, UT)         
+    import Preset_save as P
+    U = ent1.get()
+    H = ent2.get()
+    P.txt1.insert(END)         
 
 def btncmd():
     url = ent1.get()

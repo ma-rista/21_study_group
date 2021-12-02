@@ -1,9 +1,9 @@
 import os
 from tkinter import *
-\
+
 
 root = Tk()
-root.title("제목 없음")
+root.title("URL HTML Preset")
 root.geometry("640x480")
 
 # 열기, 저장 파일 이름
