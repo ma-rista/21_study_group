@@ -16,8 +16,8 @@ int main(void)
 
 	for (cnt = 0; cnt < 9; cnt++)
 	{
-		printf("sa[%d] : %c\t\t", cnt, sa[cnt]);
-		printf("*(ps + %d) : %c\n", cnt, *(ps + cnt));
+		printf("sa[%d] : %c\t\t", cnt, sa[cnt]); //$ 배열 사용 하나씩 출력
+		printf("*(ps + %d) : %c\n", cnt, *(ps + cnt)); //$ 포인터 사용 하나씩 출력
 	}
 	return 0;
 }
