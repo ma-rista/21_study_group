@@ -1,18 +1,13 @@
 import os
 from tkinter import *
 
+
 root = Tk()
-root.title("제목 없음")
+root.title("URL HTML Preset")
 root.geometry("640x480")
 
 # 열기, 저장 파일 이름
 filename = "myno te.txt"
-
-def open_file():
-    if os.path.isfile(filename): # 파일 있으면 True, 없으면 False
-        with open(filename, "r", encoding="utf8") as file:
-            txt1.delete("1.0", END) # 텍스트 위젯 본문 삭제
-            txt1.insert(END, file.read()) # 파일 내용을 본문에 입력
 
 def save_file():
     with open(filename, "w", encoding="utf8") as file:
@@ -24,7 +19,7 @@ menu = Menu(root)
 
 # 파일 탭 (상단 메뉴 바)
 menu_file = Menu(menu, tearoff=0)
-menu_file.add_command(label="열기", command=open_file)
+
 menu_file.add_command(label="저장", command=save_file)
 menu_file.add_separator()
 menu_file.add_command(label="끝내기", command=root.quit)

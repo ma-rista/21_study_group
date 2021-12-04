@@ -1,0 +1,9 @@
+#mw-content-text > div > ul >  li > a
+
+
+https://ko.wikisource.org/wiki/%EC%A0%80%EC%9E%90:%EC%9C%A4%EB%8F%99%EC%A3%BC
+
+메뉴바
+사이트별 html 프리셋 저장 및 불러오기
+끝내기
+도움말 (html 긁어오는 방법)

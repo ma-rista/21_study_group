@@ -1,14 +1,8 @@
-list1 = []
-list2 = []
-value = 1
-for i in range(0, 3) :
-    for k in range(0, 4) :
-        list1.append(value)
-        value += 1
-    list2.append(list1)
-    list1 = []
+ss = input("날짜(연/월/일) 입력 ==>")
 
-for i in range(0, 3) :
-    for k in range(0, 4) :
-        print("%3d" % list2[i][k], end = " ")
-    print("")
+ssList = ss.split('/')
+
+print("입력한 날짜의 10년 후 ==> ", end ='')
+print(str(int(ssList[0]) + 10) + "년", end ='')
+print(ssList[1] + "월", end ='')
+print(ssList[2] + "일")
